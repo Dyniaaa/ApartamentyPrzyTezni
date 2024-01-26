@@ -2,12 +2,15 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./Main.scss";
 
+let logoSrc = "./Images/LogoAPTwhite.png";
+console.log(logoSrc);
+
 class Main extends Component {
   render() {
     return (
       <section className="main">
         <div className="menu">
-          <img alt="Logo" />
+          <div className="logo"></div>
           <ul>
             <li>
               <NavLink to={"/"} className={"listElement"}>
@@ -15,12 +18,12 @@ class Main extends Component {
               </NavLink>
             </li>
             <li>
-              <NavLink to={"/"} className={"listElement"}>
+              <NavLink to={"/Apartments"} className={"listElement"}>
                 Apartamenty
               </NavLink>
             </li>
             <li>
-              <NavLink to={"/"} className={"listElement"}>
+              <NavLink to={"/Contact"} className={"listElement"}>
                 Kontakt
               </NavLink>
             </li>
@@ -28,6 +31,10 @@ class Main extends Component {
         </div>
         <section className="background">
           <div className="backgroundImage"></div>
+          <p>
+            Tężnia w zasięgu,<br/> Komfort w apartamencie,<br/> Twoje idealne miejsce na
+            relaks
+          </p>
         </section>
       </section>
     );

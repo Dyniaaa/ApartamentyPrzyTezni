@@ -3,7 +3,7 @@ import "./Footer.scss";
 
 class Footer extends Component {
   render() {
-    return <section className="Footer">hej</section>;
+    return <section className="Footer"></section>;
   }
 }
 
