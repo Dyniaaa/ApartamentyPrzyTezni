@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./Main.scss";
 
-let logoSrc = "./Images/LogoAPTwhite.png";
-console.log(logoSrc);
 
 class Main extends Component {
   render() {
