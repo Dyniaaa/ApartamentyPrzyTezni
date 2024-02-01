@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import Main from "./Main/Main";
 import APT from "./APT/APT";
 import OurApartments from "./OurApartments/OurApartments";
+import Location from "./Location/Location";
 
 class MainPage extends Component {
   render() {
@@ -12,6 +13,7 @@ class MainPage extends Component {
         <Main />
         <APT />
         <OurApartments />
+        <Location />
         <Footer />
       </section>
     );
