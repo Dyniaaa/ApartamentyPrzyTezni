@@ -3,6 +3,7 @@ import "./MainPage.scss";
 import Footer from "../Footer/Footer";
 import Main from "./Main/Main";
 import APT from "./APT/APT";
+import OurApartments from "./OurApartments/OurApartments";
 
 class MainPage extends Component {
   render() {
@@ -10,6 +11,7 @@ class MainPage extends Component {
       <section className="mainPage">
         <Main />
         <APT />
+        <OurApartments />
         <Footer />
       </section>
     );

@@ -7,7 +7,7 @@ class APT extends Component {
       <section className="apt">
         <p className="title">Apartamenty przy tężni</p>
         <div className="orangeLine"></div>
-        <p className="aptText">
+        <p className="text">
           Odkryj wyjątkowe apartamenty przy tężni w Busku-Zdroju!
           <br /> Nasze nowoczesne wnętrza oferują komfortowy wypoczynek.
           <br />
