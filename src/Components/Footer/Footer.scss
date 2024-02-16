@@ -1,7 +1,7 @@
 .footer {
-  height: 35vh;
   display: flex;
   justify-content: space-around;
+  margin: 1.5rem 0rem 1.5rem 0rem;
 
   .contact {
     padding: 1.5rem 0rem;
@@ -22,7 +22,7 @@
       height: 70%;
 
       li {
-        margin: 1.5rem 0rem 1.5rem 0rem;
+        margin: 1rem 0rem 1rem 0rem;
         display: flex;
         align-items: center;
         height: 15%;
@@ -38,11 +38,17 @@
           background-position: center;
           margin-right: 1rem;
         }
+
         .mail {
           background-image: url(./Images/MailIcon.png);
         }
+
         .phone {
           background-image: url(./Images/PhoneIcon.png);
+        }
+
+        .location {
+          background-image: url(./Images/Location.png);
         }
 
         .goToForm {

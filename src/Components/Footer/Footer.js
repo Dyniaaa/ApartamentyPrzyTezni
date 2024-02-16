@@ -23,6 +23,10 @@ class Footer extends Component {
               <div className="icon phone"></div>
               <p>123 456 789</p>
             </li>
+            <li>
+              <div className="icon location"></div>
+              <p>Janusza Kusocińskiego 12, 28-100 Busko-Zdrój</p>
+            </li>
           </ul>
         </div>
         <div className="footerLogo"></div>
