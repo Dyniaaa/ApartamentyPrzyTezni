@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import "./MainContent.scss";
-import Apartments from "./Apartments/Apartments";
-import Location from "./Location/Location";
+import Content from "./Content/Content";
 
 class MainContent extends Component {
   render() {
     return (
       <section className="mainContent">
         <div className="container">
-          <Apartments />
-          <Location />
+          <Content />
         </div>
       </section>
     );
