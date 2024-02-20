@@ -1,3 +1,15 @@
 .apartmentsList {
-  height: 100vh;
+  height: 100%;
+
+  .left {
+    background-color: #403f3f;
+    width: 60%;
+    height: 100%;
+  }
+
+  .right {
+    background-color: white;
+    width: 40%;
+    height: 100%;
+  }
 }
