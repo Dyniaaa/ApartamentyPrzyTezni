@@ -2,12 +2,11 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./Main.scss";
 
-
 class Main extends Component {
   render() {
     return (
       <section className="main">
-        <div className="menu">
+        <div className="mainMenu">
           <div className="logo"></div>
           <ul>
             <li>
@@ -30,8 +29,9 @@ class Main extends Component {
         <section className="background">
           <div className="backgroundImage"></div>
           <p>
-            Tężnia w zasięgu,<br/> Komfort w apartamencie,<br/> Twoje idealne miejsce na
-            relaks
+            Tężnia w zasięgu,
+            <br /> Komfort w apartamencie,
+            <br /> Twoje idealne miejsce na relaks
           </p>
         </section>
       </section>
