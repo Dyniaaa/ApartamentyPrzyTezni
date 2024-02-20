@@ -3,7 +3,7 @@ import "./Menu.scss";
 
 class Menu extends Component {
   render() {
-    return <section className="Menu"></section>;
+    return <section className="menu"></section>;
   }
 }
 
