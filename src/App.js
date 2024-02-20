@@ -13,6 +13,9 @@ class App extends Component {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/Apartments" element={<Apartments />} />
+          <Route path="/Apartment1" element={<Apartments />} />
+          <Route path="/Apartment2" element={<Apartments />} />
+          <Route path="/Apartment3" element={<Apartments />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>

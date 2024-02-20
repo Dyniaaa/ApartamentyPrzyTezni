@@ -3,47 +3,57 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  left: 500px;
+  left: 300px;
   height: 80vh;
   padding: 4rem 0rem 4rem 0rem;
 
-  .textDiv {
-    cursor: pointer;
-    position: absolute;
-    left: -100px;
-    padding: 4rem 3rem;
-    background-color: #403f3f;
+  .navlinkText {
     display: flex;
-    justify-content: center;
     align-items: center;
+    width: 30%;
 
-    .text {
-      width: 100%;
-      padding-right: 2rem;
-      color: white;
-      font-size: 1.5rem;
-      font-weight: 600;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-        sans-serif;
-    }
+    .textDiv {
+      cursor: pointer;
+      position: absolute;
+      padding: 4rem 3rem;
+      background-color: #403f3f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    .goldenArrow {
-      width: 4rem;
-      height: 1rem;
-      background-image: url(./GoldenArrow.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
+      .text {
+        width: 100%;
+        padding-right: 2rem;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      .goldenArrow {
+        width: 4rem;
+        height: 1rem;
+        background-image: url(./GoldenArrow.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
     }
   }
 
-  .aptComImg {
-    cursor: pointer;
-    width: 80%;
-    height: 80%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  .navlinkImg {
+    width: 100%;
+    height: 70%;
+
+    .aptComImg {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
   }
 }

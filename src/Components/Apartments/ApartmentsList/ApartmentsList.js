@@ -11,9 +11,21 @@ class ApartmentsList extends Component {
     return (
       <section className="apartmentsList">
         <div className="left">
-          <ApartmentComponent bgImg={ss1} aptName='APARTAMENT 1' />
-          <ApartmentComponent bgImg={ss2} aptName="APARTAMENT 2" />
-          <ApartmentComponent bgImg={ss3} aptName="APARTAMENT 3" />
+          <ApartmentComponent
+            bgImg={ss1}
+            aptName="APARTAMENT 1"
+            link="/Apartment1"
+          />
+          <ApartmentComponent
+            bgImg={ss2}
+            aptName="APARTAMENT 2"
+            link="/Apartment2"
+          />
+          <ApartmentComponent
+            bgImg={ss3}
+            aptName="APARTAMENT 3"
+            link="/Apartment3"
+          />
         </div>
         <div className="right"></div>
       </section>
