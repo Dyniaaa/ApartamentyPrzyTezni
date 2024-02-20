@@ -9,13 +9,21 @@ class ApartmentComponent extends Component {
       backgroundImage: `url("${bgImg}")`,
     };
 
+    function przekierujNaInnaStrone() {
+      window.location.href = "/";
+    }
+
     return (
       <section className="apartmentComponent">
-        <div className="textDiv">
+        <div className="textDiv" onClick={przekierujNaInnaStrone}>
           <p className="text">{aptName}</p>
           <div className="goldenArrow"></div>
         </div>
-        <div style={styles} className="aptComImg"></div>
+        <div
+          style={styles}
+          className="aptComImg"
+          onClick={przekierujNaInnaStrone}
+        ></div>
       </section>
     );
   }
