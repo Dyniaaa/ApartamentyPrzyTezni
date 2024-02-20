@@ -10,8 +10,9 @@ class Content extends Component {
           <p className="title">Apartamenty przy tężni</p>
           <div className="underLine"></div>
           <p className="text">
-            Zapraszamy do komfortowych apartamentów przy tężni w Busku-Zdroju.
-            Twój dom blisko uzdrowiska czeka na Ciebie
+            Zanurz się w wyjątkowym uroku lokalnego luksusu
+            <br />
+            Twój prywatny świat w sercu tego miejsca.
           </p>
         </div>
         <div className="textDiv">
@@ -19,7 +20,9 @@ class Content extends Component {
           <div className="underLine"></div>
           <p className="text">
             Doświadcz niezapomnianego pobytu w komfortowych apartamentach z
-            doskonałym wyposażeniem. Twój doskonały pobyt zaczyna się tutaj!
+            doskonałym wyposażeniem.
+            <br />
+            Twój doskonały pobyt zaczyna się tutaj!
           </p>
         </div>
         <div className="images">
@@ -34,10 +37,11 @@ class Content extends Component {
           <p className="title">Lokalizacja</p>
           <div className="underLine"></div>
           <p className="text">
-            Nasze apartamenty łączą wygodę z doskonałą lokalizacją, blisko
-            atrakcji, restauracji i sklepów. Odkrywaj zabytki, smakuj lokalne
-            kulinaria i ciesz się łatwym dostępem do wszystkiego, co miasto ma
-            do zaoferowania.
+            Nasze apartamenty łączą wygodę z doskonałą lokalizacją,
+            <br />
+            blisko atrakcji, restauracji i sklepów.
+            <br /> Odkrywaj zabytki, smakuj lokalne kulinaria i ciesz się łatwym
+            dostępem do wszystkiego, co miasto ma do zaoferowania.
           </p>
         </div>
         <div className="map">
