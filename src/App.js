@@ -5,6 +5,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import NotFound from "./Components/NotFound";
 import MainPage from "./Components/MainPage/MainPage";
 import Apartments from "./Components/Apartments/Apartments";
+import Contact from "./Components/Contact/Contact";
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           <Route path="/Apartment1" element={<Apartments />} />
           <Route path="/Apartment2" element={<Apartments />} />
           <Route path="/Apartment3" element={<Apartments />} />
+          <Route path="/Contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>

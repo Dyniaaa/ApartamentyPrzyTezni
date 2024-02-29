@@ -1,0 +1,82 @@
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+
+    margin-bottom: 5rem;
+  }
+
+  .infoContent {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+
+    .infoText {
+      width: 60%;
+      color: white;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-weight: 600;
+
+      ul {
+        height: 100%;
+
+        li {
+          display: flex;
+          align-items: center;
+          height: 33%;
+
+          .icon {
+            margin-right: 0.5rem;
+            width: 10%;
+            height: 50%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+          }
+
+          .mail {
+            background-image: url(./Images/MailIcon.png);
+            height: 40%;
+          }
+
+          .phone {
+            background-image: url(./Images/PhoneIcon.png);
+          }
+
+          .location {
+            background-image: url(./Images/Location.png);
+          }
+
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .mapBG {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #caae5f;
+
+      iframe {
+        width: 96%;
+        height: 93%;
+      }
+    }
+  }
+}
