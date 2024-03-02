@@ -2,7 +2,7 @@
   "name": "apt",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Dyniaaa.github.io/ApartamentyPrzyTezni",
+  "homepage": "http://www.apartamentyprzytezni.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
