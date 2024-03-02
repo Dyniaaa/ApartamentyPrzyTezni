@@ -11,11 +11,11 @@ class Info extends Component {
             <ul>
               <li>
                 <div className="icon mail"></div>
-                <p>Apartamentyprzytezni@gmail.com</p>
+                <p>apartamentyprzytezni@gmail.com</p>
               </li>
               <li>
                 <div className="icon phone"></div>
-                <p>123 456 789</p>
+                <p>+48 508 500 886</p>
               </li>
               <li>
                 <div className="icon location"></div>
