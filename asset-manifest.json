@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ApartamentyPrzyTezni/static/css/main.732b4569.css",
+    "main.js": "/ApartamentyPrzyTezni/static/js/main.09745a57.js",
+    "static/js/787.20925c01.chunk.js": "/ApartamentyPrzyTezni/static/js/787.20925c01.chunk.js",
+    "static/media/2.png": "/ApartamentyPrzyTezni/static/media/2.4ee3806a11df0c4c20d4.png",
+    "static/media/ss1.png": "/ApartamentyPrzyTezni/static/media/ss1.ae47321fc538df88416f.png",
+    "static/media/1.png": "/ApartamentyPrzyTezni/static/media/1.ffa0d7b8568f0e54c0c3.png",
+    "static/media/ss3.png": "/ApartamentyPrzyTezni/static/media/ss3.a9f2c97932f14f4bbd24.png",
+    "static/media/1.jpg": "/ApartamentyPrzyTezni/static/media/1.78bfe43925acaf825131.jpg",
+    "static/media/ss2.png": "/ApartamentyPrzyTezni/static/media/ss2.39c9a6e75fc30100a0a6.png",
+    "static/media/3.png": "/ApartamentyPrzyTezni/static/media/3.b4c30e11a7feeaaaa8f1.png",
+    "static/media/LogoAPTwhite.png": "/ApartamentyPrzyTezni/static/media/LogoAPTwhite.419fa64bf60480a9c106.png",
+    "static/media/LogoAPTblack.png": "/ApartamentyPrzyTezni/static/media/LogoAPTblack.21415c99e382c31726a3.png",
+    "index.html": "/ApartamentyPrzyTezni/index.html",
+    "main.732b4569.css.map": "/ApartamentyPrzyTezni/static/css/main.732b4569.css.map",
+    "main.09745a57.js.map": "/ApartamentyPrzyTezni/static/js/main.09745a57.js.map",
+    "787.20925c01.chunk.js.map": "/ApartamentyPrzyTezni/static/js/787.20925c01.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.732b4569.css",
+    "static/js/main.09745a57.js"
+  ]
+}
