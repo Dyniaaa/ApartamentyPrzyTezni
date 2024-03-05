@@ -2,6 +2,7 @@
   .mainMenu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: white;
     position: absolute;
     width: 100%;
@@ -9,12 +10,11 @@
     z-index: 1;
 
     .logo {
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-      width: 30%;
+      height: 70%;
+      width: 50%;
       background-image: url(./Images/LogoAPTwhite.png);
       background-size: contain;
-      background-position: center;
+      background-position: 30%;
       background-repeat: no-repeat;
     }
 
@@ -41,13 +41,16 @@
     }
   }
 
+  .hide {
+    display: none;
+  }
+
   .background {
     background: linear-gradient(
       0deg,
       rgba(64, 63, 63, 1) 5%,
       rgba(0, 0, 0, 0.5) 100%
     );
-    height: 100vh;
     width: 100%;
     position: relative;
     display: flex;
@@ -68,6 +71,7 @@
     }
 
     p {
+      margin: 30rem 0rem;
       font-size: 2.5rem;
       position: relative;
       z-index: 1;
@@ -80,5 +84,196 @@
       margin-left: 4rem;
       margin-bottom: 3rem;
     }
+  }
+}
+
+//Tablets
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+}
+
+//Phones
+
+@media screen and (max-width: 800px) {
+  .main {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .mainMenu {
+      position: absolute;
+      z-index: 3;
+      width: 100%;
+
+      .logo {
+        width: 50%;
+        height: 50%;
+      }
+
+      ul {
+        display: none;
+      }
+
+      .phoneMenuButton {
+        margin-right: 3rem;
+        height: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .phoneMenuButtonCell {
+          background-color: white;
+          height: 0.25rem;
+          width: 1.7rem;
+        }
+      }
+    }
+
+    .phoneMenu {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      margin-left: auto;
+      position: fixed;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.85);
+
+      ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        li {
+          margin: 2rem 0rem;
+
+          .listElement {
+            text-decoration: none;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+              "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+              "Helvetica Neue", sans-serif;
+            letter-spacing: 0.1rem;
+          }
+        }
+      }
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .firstPhoneMenuCellToX {
+      animation: firstPhoneMenuCellToX 1s ease forwards;
+    }
+
+    .firstPhoneMenuCellToNormal {
+      animation: firstPhoneMenuCellToNormal 1s ease forwards;
+    }
+
+    .secondPhoneMenuCellToX {
+      animation: secondPhoneMenuCellToX 0.5s ease forwards;
+    }
+
+    .secondPhoneMenuCellToNormal {
+      animation: secondPhoneMenuCellToNormal 0.5s ease forwards;
+    }
+
+    .thirdPhoneMenuCellToX {
+      animation: thirdPhoneMenuCellToX 1s ease forwards;
+    }
+
+    .thirdPhoneMenuCellToNormal {
+      animation: thirdPhoneMenuCellToNormal 1s ease forwards;
+    }
+
+    .slideUp {
+      animation: slideUp 1s ease forwards;
+    }
+
+    .slideDown {
+      animation: slideDown 1s ease forwards;
+    }
+  }
+}
+
+// Animations for phoneMenu
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+// Animations for firstPhoneMenuCell
+
+@keyframes firstPhoneMenuCellToX {
+  0% {
+    transform: rotateZ(0deg) translateY(0);
+  }
+  100% {
+    transform: rotateZ(45deg) translateY(13px);
+  }
+}
+
+@keyframes firstPhoneMenuCellToNormal {
+  0% {
+    transform: rotateZ(45deg) translateY(13px);
+  }
+  100% {
+    transform: rotateZ(0deg) translateY(0);
+  }
+}
+
+// Animations for secondPhoneMenuCell
+
+@keyframes secondPhoneMenuCellToX {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes secondPhoneMenuCellToNormal {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+// Animations for thirdPhoneMenuCell
+
+@keyframes thirdPhoneMenuCellToX {
+  0% {
+    transform: rotateZ(0deg) translateY(0);
+  }
+  100% {
+    transform: rotateZ(-45deg) translateY(-13px);
+  }
+}
+
+@keyframes thirdPhoneMenuCellToNormal {
+  0% {
+    transform: rotateZ(-45deg) translateY(-13px);
+  }
+  100% {
+    transform: rotateZ(0deg) translateY(0);
   }
 }

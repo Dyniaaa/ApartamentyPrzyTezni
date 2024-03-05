@@ -1,40 +1,244 @@
 .menu {
-  display: flex;
-  justify-content: space-between;
   color: white;
   width: 100%;
   height: 20vh;
   background-color: #323232;
 
-  .logo {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    width: 30%;
-    background-image: url(LogoAPTwhite.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  ul {
-    width: 50%;
+  .menuDiv {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
-    .listElement {
-      padding: 1.05rem;
-      text-decoration: none;
-      color: white;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-        sans-serif;
-      letter-spacing: 0.1rem;
+    .logo {
+      height: 70%;
+      width: 50%;
+      background-image: url(LogoAPTwhite.png);
+      background-size: contain;
+      background-position: 30%;
+      background-repeat: no-repeat;
     }
 
-    .active {
-      border: 0.05rem solid white;
-      padding: 1rem;
+    ul {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .listElement {
+        padding: 1.05rem;
+        text-decoration: none;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        letter-spacing: 0.1rem;
+      }
+
+      .active {
+        border: 0.05rem solid white;
+        padding: 1rem;
+      }
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+//Tablets
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+}
+
+//Phones
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .menuDiv {
+      position: relative;
+      z-index: 3;
+
+      .logo {
+        width: 50%;
+        height: 50%;
+      }
+
+      ul {
+        display: none;
+      }
+
+      .phoneMenuButton {
+        margin-right: 3rem;
+        height: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .phoneMenuButtonCell {
+          background-color: white;
+          height: 0.25rem;
+          width: 1.7rem;
+        }
+      }
+    }
+
+    .phoneMenu {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      margin-left: auto;
+      position: fixed;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.85);
+
+      ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        li {
+          margin: 2rem 0rem;
+
+          .listElement {
+            text-decoration: none;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+              "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+              "Helvetica Neue", sans-serif;
+            letter-spacing: 0.1rem;
+          }
+        }
+      }
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .sticky {
+      position: fixed;
+      right: 0rem;
+    }
+
+    .firstPhoneMenuCellToX {
+      animation: firstPhoneMenuCellToX 1s ease forwards;
+    }
+
+    .firstPhoneMenuCellToNormal {
+      animation: firstPhoneMenuCellToNormal 1s ease forwards;
+    }
+
+    .secondPhoneMenuCellToX {
+      animation: secondPhoneMenuCellToX 0.5s ease forwards;
+    }
+
+    .secondPhoneMenuCellToNormal {
+      animation: secondPhoneMenuCellToNormal 0.5s ease forwards;
+    }
+
+    .thirdPhoneMenuCellToX {
+      animation: thirdPhoneMenuCellToX 1s ease forwards;
+    }
+
+    .thirdPhoneMenuCellToNormal {
+      animation: thirdPhoneMenuCellToNormal 1s ease forwards;
+    }
+
+    .slideUp {
+      animation: slideUp 1s ease forwards;
+    }
+
+    .slideDown {
+      animation: slideDown 1s ease forwards;
+    }
+  }
+
+  // Animations for phoneMenu
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+  // Animations for firstPhoneMenuCell
+
+  @keyframes firstPhoneMenuCellToX {
+    0% {
+      transform: rotateZ(0deg) translateY(0);
+    }
+    100% {
+      transform: rotateZ(45deg) translateY(13px);
+    }
+  }
+
+  @keyframes firstPhoneMenuCellToNormal {
+    0% {
+      transform: rotateZ(45deg) translateY(13px);
+    }
+    100% {
+      transform: rotateZ(0deg) translateY(0);
+    }
+  }
+
+  // Animations for secondPhoneMenuCell
+
+  @keyframes secondPhoneMenuCellToX {
+    0% {
+      background-color: white;
+    }
+    100% {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  @keyframes secondPhoneMenuCellToNormal {
+    0% {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+      background-color: white;
+    }
+  }
+
+  // Animations for thirdPhoneMenuCell
+
+  @keyframes thirdPhoneMenuCellToX {
+    0% {
+      transform: rotateZ(0deg) translateY(0);
+    }
+    100% {
+      transform: rotateZ(-45deg) translateY(-13px);
+    }
+  }
+
+  @keyframes thirdPhoneMenuCellToNormal {
+    0% {
+      transform: rotateZ(-45deg) translateY(-13px);
+    }
+    100% {
+      transform: rotateZ(0deg) translateY(0);
     }
   }
 }
