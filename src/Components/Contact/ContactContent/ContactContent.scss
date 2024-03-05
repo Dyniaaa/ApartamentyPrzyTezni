@@ -19,3 +19,19 @@
     }
   }
 }
+
+//Tablets
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+}
+
+//Phones
+
+@media screen and (max-width: 800px) {
+  .contactContent {
+    .contactContentDiv {
+      width: 80%;
+      padding: 4rem 0rem 4rem 0rem;
+    }
+  }
+}

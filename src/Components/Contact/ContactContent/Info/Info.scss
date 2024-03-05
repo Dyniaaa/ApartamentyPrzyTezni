@@ -13,7 +13,13 @@
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
 
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .goldenUnderLine {
+    width: 15%;
+    border: 2px solid #caae5f;
+    margin-bottom: 4rem;
   }
 
   .infoContent {
@@ -76,6 +82,65 @@
       iframe {
         width: 96%;
         height: 93%;
+      }
+    }
+  }
+}
+
+//Tablets
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+}
+
+//Phones
+
+@media screen and (max-width: 800px) {
+  .info {
+    .title {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .goldenUnderLine {
+      margin-bottom: 2rem;
+    }
+
+    .infoContent {
+      display: flex;
+      justify-content: space-around;
+      width: 90%;
+      flex-direction: column;
+
+      .infoText {
+        width: 100%;
+        height: 8rem;
+
+        ul {
+          height: 100%;
+          margin: 1rem 0rem;
+
+          li {
+            height: 29%;
+
+            .icon {
+              margin-right: 0.5rem;
+              width: 10%;
+              height: 50%;
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center;
+            }
+
+            p {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+
+      .mapBG {
+        height: 50%;
+        width: 100%;
       }
     }
   }

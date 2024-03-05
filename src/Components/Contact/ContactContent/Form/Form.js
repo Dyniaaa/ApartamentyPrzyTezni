@@ -56,6 +56,7 @@ class Form extends Component {
     return (
       <section className="form">
         <p className="contactTitle">Skontaktuj się z nami</p>
+        <div className="goldenUnderLine"></div>
 
         {this.state.status === "success" ? (
           <p style={success}>Wiadomość została wysłana pomyślnie!</p>

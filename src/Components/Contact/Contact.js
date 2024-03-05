@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import "./Contact.scss";
 import Menu from "../Menu/Menu";
 import ContactContent from "./ContactContent/ContactContent";
 
 class Contact extends Component {
   render() {
     return (
-      <section className="contact">
+      <section>
         <Menu />
         <ContactContent />
       </section>
@@ -15,4 +14,3 @@ class Contact extends Component {
 }
 
 export default Contact;
- 

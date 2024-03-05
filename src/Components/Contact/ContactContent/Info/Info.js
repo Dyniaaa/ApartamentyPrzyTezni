@@ -6,6 +6,7 @@ class Info extends Component {
     return (
       <section className="info">
         <p className="title">Informacje</p>
+        <div className="goldenUnderLine"></div>
         <div className="infoContent">
           <div className="infoText">
             <ul>
