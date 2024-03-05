@@ -2,8 +2,8 @@
 
 $name = $_POST["name"];
 $from = $_POST["mail"];
-$subject = "ApartamentyPrzyTężni";
-$to = "apartamentyuchnasta3@gmail.com";
+$subject = "ApartamentyPrzyTezni";
+$to = "apartamentyprzytezni@gmail.com";
 $message = $_POST["msg"];
 
 $txt = "Imie: " . $name . "\r\n" . "Email: " . $from . "\r\n" . "\r\n" . "Tresc: " . $message;

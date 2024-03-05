@@ -36,6 +36,9 @@ class Form extends Component {
 
   render() {
     const success = {
+      fontFamily: `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif`,
       textAlign: "center",
       backgroundColor: "#00cc00",
       width: "40%",
@@ -45,6 +48,9 @@ class Form extends Component {
     };
 
     const error = {
+      fontFamily: `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif`,
       textAlign: "center",
       backgroundColor: "#ff4444",
       width: "40%",
