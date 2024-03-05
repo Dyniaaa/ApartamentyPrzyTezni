@@ -6,7 +6,7 @@ import ApartmentsList from "./ApartmentsList/ApartmentsList";
 class Apartments extends Component {
   render() {
     return (
-      <section className="apartments">
+      <section>
         <Menu />
         <ApartmentsList />
         <Footer />

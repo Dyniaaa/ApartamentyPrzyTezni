@@ -16,10 +16,12 @@ class Main extends Component {
     }));
     console.log(this.state.Menu);
     let phoneMenu = document.querySelector(".phoneMenu");
+    let phoneMenuButton = document.querySelector(".phoneMenuButton");
     let first = document.querySelector(".first");
     let second = document.querySelector(".second");
     let third = document.querySelector(".third");
     if (!this.state.Menu) {
+      phoneMenuButton.classList.add("sticky");
       phoneMenu.classList.add("slideDown");
       phoneMenu.classList.remove("slideUp");
       phoneMenu.classList.remove("hide");
@@ -31,6 +33,7 @@ class Main extends Component {
       third.classList.remove("thirdPhoneMenuCellToNormal");
     }
     if (this.state.Menu) {
+      phoneMenuButton.classList.remove("sticky");
       phoneMenu.classList.add("slideUp");
       phoneMenu.classList.remove("slideDown");
       first.classList.remove("firstPhoneMenuCellToX");

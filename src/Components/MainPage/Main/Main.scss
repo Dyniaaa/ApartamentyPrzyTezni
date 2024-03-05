@@ -164,6 +164,11 @@
       display: none;
     }
 
+    .sticky {
+      position: fixed;
+      right: 0rem;
+    }
+
     .background {
       p {
         margin: 31rem 0.5rem 1rem 1rem;
