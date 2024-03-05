@@ -164,6 +164,14 @@
       display: none;
     }
 
+    .background {
+      p {
+        margin: 31rem 0.5rem 1rem 1rem;
+        font-size: 1.41rem;
+        letter-spacing: 0.05rem;
+      }
+    }
+
     .firstPhoneMenuCellToX {
       animation: firstPhoneMenuCellToX 1s ease forwards;
     }

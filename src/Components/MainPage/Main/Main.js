@@ -94,7 +94,7 @@ class Main extends Component {
           <p>
             Tężnia w zasięgu,
             <br /> Komfort w apartamencie,
-            <br /> Twoje idealne miejsce na relaks
+            <br /> Twoje idealne miejsce na relaks.
           </p>
         </section>
       </section>
