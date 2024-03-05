@@ -67,3 +67,41 @@
     background-position: center;
   }
 }
+
+//Tablets
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+}
+
+//Phones
+
+@media screen and (max-width: 800px) {
+  .footer {
+    .contact {
+      width: 45%;
+
+      .contactTitle {
+        width: 30%;
+        font-size: 1.5rem;
+        border-bottom: 3px solid #e6b26f;
+        padding-bottom: 0.5rem;
+      }
+
+      ul {
+        height: 70%;
+
+        li {
+          font-size: 0.52rem;
+
+          .icon {
+            width: 20px;
+          }
+        }
+      }
+    }
+
+    .footerLogo {
+      width: 30%;
+    }
+  }
+}
