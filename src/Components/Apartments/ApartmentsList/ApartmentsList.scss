@@ -13,3 +13,21 @@
     height: 100%;
   }
 }
+
+//Tablets
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+}
+
+//Phones
+
+@media screen and (max-width: 800px) {
+  .apartmentsList {
+    .left {
+      width: 100%;
+    }
+    .right {
+      display: none;
+    }
+  }
+}

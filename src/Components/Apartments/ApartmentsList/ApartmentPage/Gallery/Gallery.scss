@@ -77,3 +77,48 @@
     }
   }
 }
+
+//Tablets
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+}
+
+//Phones
+
+@media screen and (max-width: 800px) {
+  .gallery {
+    .slider {
+      height: 40vh;
+
+      .arrowButton {
+        height: 0.4rem;
+        width: 5%;
+      }
+
+      .imageContainer {
+        width: 70%;
+
+        img {
+          height: auto;
+          width: 100%;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+    }
+
+    .thumbnails {
+      padding: 75px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      width: 80%;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}

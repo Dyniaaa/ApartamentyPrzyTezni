@@ -57,3 +57,51 @@
     }
   }
 }
+
+//Tablets
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  .apartmentComponent {
+    height: 60vh;
+
+    .navlinkText {
+      .textDiv {
+        .text {
+          font-size: 1rem;
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+//Phones
+
+@media screen and (max-width: 800px) {
+  .apartmentComponent {
+    left: 10px;
+    width: 85%;
+    height: 500px;
+    padding: 0rem;
+
+    .navlinkText {
+      .textDiv {
+        background-color: #323232;
+        padding: 1.4rem 0rem 1.4rem 1rem;
+
+        .text {
+          font-size: 1rem;
+          padding-right: 0rem;
+        }
+
+        .goldenArrow {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .navlinkImg {
+      height: 50%;
+    }
+  }
+}
